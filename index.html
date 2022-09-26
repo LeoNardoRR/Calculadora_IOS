@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css">
+    <script src="CalcJS.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="fundo">
+        <img class= "iphone" src="iphone.png">
+        <div class="calculator">
+            <p id="result"></p>
+            <table class="table">
+            
+                <tr>
+                    <td><button class="button3" onclick="clean()">AC</button></td>
+                    <td><button class="button3" onclick="back()">+/-</button></td>
+                    <td><button class="button3" onclick="insert('%')">%</button></td>
+                    <td><button class="count" onclick="insert('/')">÷</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" onclick="insert('7')"><a class="texto">7</a></button></td>
+                    <td><button class="button" onclick="insert('8')"><a class="texto">8</a></button></td>
+                    <td><button class="button" onclick="insert('9')"><a class="texto">9</a></button></td>
+                    <td><button class="count" onclick="insert('*')">x</button></td>
+
+                </tr>
+
+                <tr>
+                    <td><button class="button" onclick="insert('4')"><a class="texto">4</a></button></td>
+                    <td><button class="button" onclick="insert('5')"><a class="texto">5</a></button></td>
+                    <td><button class="button" onclick="insert('6')"><a class="texto">6</a></button></td>
+                    <td><button class="count" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" onclick="insert('1')"><a class="texto">1</a></button></td>
+                    <td><button class="button" onclick="insert('2')"><a class="texto">2</a></button></td>
+                    <td><button class="button" onclick="insert('3')"><a class="texto">3</a></button></td>
+                    <td><button class="count" onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="button2" style="width: 108px;" onclick="insert('0')">0</button></td>
+                    <td><button class="button" onclick="insert('.')">.</button></td>
+                    <td rowspan="2"><button class="count3" onclick="calcular()">=</button></td>
+                </tr>
+
+            </table>
+            <div class="line"></div>
+        </div>
+
+
+    </div>
+</body>
+</html>
