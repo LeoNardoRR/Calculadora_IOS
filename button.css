@@ -28,7 +28,7 @@ html, body
 }
 
 .calculator{
-    position: absolute;
+    position: fixed;
     font-size: 10px;
     text-transform: uppercase;
     background-color: black;
