@@ -6,15 +6,28 @@
 
             document.getElementById('result').innerHTML = numero + num;
         }
+
         function clean()
         {
             document.getElementById('result').innerHTML = ""; 
         }
-        function back()
+
+        function less()
         {
-            var result = document.getElementById('result').innerHTML;
-            document.getElementById('result').innerHTML = result.substring(0, result.length -1);
+            var numero = document.getElementById('result').innerHTML; 
+            // O getElementById retorna a referência do elemento através do seu ID
+
+            document.getElementById('result').innerHTML = "-" + numero; 
         }
+
+        function porcent()
+        {
+            var numero = document.getElementById('result').innerHTML; 
+            // O getElementById retorna a referência do elemento através do seu ID
+
+            document.getElementById('result').innerHTML = "%" + numero * 0.1; 
+        }
+        
         function calcular()
         {
             var result = document.getElementById('result').innerHTML;
